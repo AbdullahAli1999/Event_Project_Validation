@@ -19,6 +19,7 @@ public class Event {
     private String description;
     @NotNull(message = "Capacity cannot be null")
     @Min(value = 26, message = "Capacity must be more than 25")
+    @Digits(integer = 5, fraction = 0, message = "Capacity must be a number")
    // @Pattern(regexp = "^[+-]?[0-9]+(\\.[0-9]+)?$", message = "Just a valid number (optional decimal allowed).")
     private int capacity;
     private LocalDate startDate;
